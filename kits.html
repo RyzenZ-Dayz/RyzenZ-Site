@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kits | RyzenZ DayZ</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+
+header {
+    height: 90px;
+    background: #080808;
+    border-bottom: 1px solid #8b0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo-name {
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #e00000;
+}
+
+/* BANNER */
+
+.kits-header {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.94)
+        ),
+        url("img/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.kits-header h1 {
+    font-size: 60px;
+    letter-spacing: 8px;
+}
+
+.kits-header h1 span {
+    color: #e00000;
+}
+
+.kits-header p {
+    margin-top: 15px;
+    color: #aaa;
+}
+
+/* KITS */
+
+.kits-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.title p {
+    color: #888;
+    margin-top: 10px;
+}
+
+.kits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.kit {
+    background: #0c0c0c;
+    border: 1px solid #242424;
+    padding: 35px 30px;
+    transition: .3s;
+}
+
+.kit:hover {
+    transform: translateY(-8px);
+    border-color: #d00000;
+}
+
+.kit h3 {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.kit-description {
+    text-align: center;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.items {
+    list-style: none;
+    min-height: 210px;
+}
+
+.items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #1c1c1c;
+    color: #bbb;
+}
+
+.items li::before {
+    content: "✓";
+    color: #e00000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: #e00000;
+    margin-top: 25px;
+}
+
+.buy {
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    background: #b50000;
+    border: 1px solid #e00000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.buy:hover {
+    background: #e00000;
+}
+
+.back {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.back a {
+    color: #999;
+    text-decoration: none;
+}
+
+.back a:hover {
+    color: white;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #181818;
+    color: #666;
+}
+
+/* CELULAR */
+
+@media(max-width:850px) {
+
+    .kits {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="img/logo.png" alt="RyzenZ Logo">
+    <span class="logo-name">RYZENZ</span>
+</div>
+
+<nav>
+    <a href="index.html">INÍCIO</a>
+    <a href="loja.html">LOJA</a>
+    <a href="#">RANKING</a>
+    <a href="#">REGRAS</a>
+    <a href="#">GALERIA</a>
+    <a href="#">STATUS</a>
+    <a href="#">DISCORD</a>
+</nav>
+
+</header>
+
+
+<section class="kits-header">
+
+<div>
+    <h1>KITS <span>RYZENZ</span></h1>
+    <p>Escolha o equipamento ideal para sua jornada.</p>
+</div>
+
+</section>
+
+
+<section class="kits-section">
+
+<div class="title">
+    <h2>KITS DISPONÍVEIS</h2>
+    <p>Os itens e valores serão definidos em breve.</p>
+</div>
+
+
+<div class="kits">
+
+<!-- KIT INICIAL -->
+
+<div class="kit">
+
+    <h3>KIT INICIAL</h3>
+    <p class="kit-description">Para começar sua jornada.</p>
+
+    <ul class="items">
+        <li>Itens a definir</li>
+        <li>Itens a definir</li>
+        <li>Itens a definir</li>
+        <li>Itens a definir</li>
+    </ul>
+
+    <div class="price">EM BREVE</div>
+
+    <a href="#" class="buy">INDISPONÍVEL</a>
+
+</div>
+
+
+<!-- KIT CONSTRUÇÃO -->
+
+<div class="kit">
+
+    <h3>KIT CONSTRUÇÃO</h3>
+    <p class="kit-description">Prepare sua base.</p>
+
+    <ul class="items">
+        <li>Itens a definir</li>
+        <li>Itens a definir</li>
+        <li>Itens a definir</li>
+        <li>Itens a definir</li>
+    </ul>
+
+    <div class="price">EM BREVE</div>
+
+    <a href="#" class="buy">INDISPONÍVEL</a>
+
+</div>
+
+<!-- KIT CONSTRUÇÃO PREMIUM -->
+
+<div class="kit">
+
+    <h3>KIT CONSTRUÇÃO PREMIUM</h3>
+    <p class="kit-description">Para grandes bases e projetos de clãs.</p>
+
+    <ul class="items">
+        <li>Materiais de construção a definir</li>
+        <li>Ferramentas a definir</li>
+        <li>Suprimentos a definir</li>
+        <li>Quantidades a definir</li>
+    </ul>
+
+    <div class="price">EM BREVE</div>
+
+    <a href="#" class="buy">INDISPONÍVEL</a>
+
+</div>
+
+
+
+</div>
+
+
+<div class="back">
+    <a href="loja.html">← VOLTAR PARA A LOJA</a>
+</div>
+
+</section>
+
+
+<footer>
+© 2026 RyzenZ • DayZ Server
+</footer>
+
+</body>
+</html>
